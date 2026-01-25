@@ -38,6 +38,8 @@ This repository follows semantic versioning for the method specification itself.
 
 The current version is **1.0.0**.
 
+See [CHANGELOG.md](CHANGELOG.md) for version history and detailed changes.
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
