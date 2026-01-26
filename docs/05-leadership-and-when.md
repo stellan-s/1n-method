@@ -52,7 +52,7 @@ Many stakeholders—executives, investors, customers—want to see a **roadmap**
 
 The 1..n Method allows roadmaps, but with important constraints:
 
-### Use Sequential Language, Not Calendar Dates
+### Use State Language, Not Calendar Dates
 
 Instead of:
 - Q1: Feature A
@@ -61,10 +61,9 @@ Instead of:
 
 Use:
 - **Now:** Feature A (in focus set)
-- **Next:** Feature B (top inert candidate)
-- **Later:** Feature C (under consideration)
+- **Under Consideration:** Features B, C (inert, unordered, may become replacement candidates)
 
-**Why:** Sequential language is honest about priority without making false time commitments.
+**Why:** State language describes current reality without creating queue positions or false time commitments. Items "under consideration" are not sequenced—they are all equally inert until a replacement decision is made.
 
 ### Conditional Quarter Labels (If Required)
 
@@ -92,7 +91,7 @@ Stakeholders—especially those outside engineering—will pressure leaders for 
 **The leader's job is to hold the line:**
 
 1. **Acknowledge the desire for certainty.** "I understand you need to plan. Here's what we know and what we don't."
-2. **Provide context, not promises.** "We're focused on X right now. Y is next in line if X finishes and nothing more urgent emerges."
+2. **Provide context, not promises.** "We're focused on X right now. Y is under consideration—if it becomes more important than current work, we'll make a replacement decision."
 3. **Reframe success.** "Our goal is to solve [problem] well, not to hit an arbitrary date. We'll know it's done when it works in production."
 
 **Why:** Trading short-term comfort (a confident answer) for long-term trust (honest uncertainty) is a leadership discipline.
@@ -116,8 +115,8 @@ If another team, vendor, or partner depends on your work, you owe them informati
 The 1..n Method replaces false precision with honest communication:
 
 - **In focus:** "We're working on it; it's done when it's fit for purpose."
-- **Inert:** "Not active; no timeline unless it displaces current work."
-- **Roadmaps:** Sequential priority ("now, next, later") over calendar dates.
+- **Inert:** "Not active; no timeline, no queue position, no implied future."
+- **Roadmaps:** State language ("now" and "under consideration") over calendar dates or sequencing.
 - **Conditional quarters:** Allowed, but framed as hypotheses, not commitments.
 
 Leadership's role is to protect this honesty, even under pressure. Credibility comes from delivering value, not from meeting arbitrary dates.

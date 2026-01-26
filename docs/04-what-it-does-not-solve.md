@@ -20,7 +20,7 @@ The method does not resolve power struggles, hidden agendas, or interpersonal co
 
 The method requires leaders who can make hard prioritization decisions and accept trade-offs.
 
-If leadership is unwilling to say "no," unable to displace work, or insists on accumulating commitments without constraints, the method will not function.
+If leadership is unwilling to leave work unchosen, unable to displace work, or insists on accumulating commitments without constraints, the method will not function.
 
 **Why:** Bounded focus and replacement require someone with authority to enforce the constraint.
 
@@ -104,13 +104,13 @@ The method does not solve problems caused by external blockers: vendor delays, t
 
 ---
 
-## 10. Cultural Resistance to Saying "No"
+## 10. Cultural Resistance to Non-Selection
 
-If the organization's culture punishes saying "no" or rewards promising everything, the method will struggle.
+If the organization's culture punishes declining to commit or rewards promising everything, the method will struggle.
 
-**Why:** Replacement and bounded focus require the ability to decline work, even when stakeholders object.
+**Why:** Replacement and bounded focus require the ability to leave work unchosen, even when stakeholders object. Organizations must be able to acknowledge that not all work will be done.
 
-**What helps:** Leadership modeling, psychological safety, and treating "no" as a strategic tool.
+**What helps:** Leadership modeling, psychological safety, and treating non-selection as a necessary constraint rather than a failure.
 
 ---
 

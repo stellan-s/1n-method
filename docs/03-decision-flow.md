@@ -9,11 +9,14 @@ flowchart TD
     A[New request or situation] --> B{Type of question?}
 
     B -->|External request| C{Focus set full?}
-    C -->|No| D[Add to Focus set]
+    C -->|No| D{Willing to commit now?}
+    D -->|Yes| DA[Add to Focus set]
+    D -->|No| DB[Not chosen, not committed]
     C -->|Yes| E{More important than current work?}
     E -->|Yes| F[Replace item in Focus set]
-    E -->|No| G[Say no, no queue, no date]
+    E -->|No| G[Not chosen, not committed]
     G --> H[Explain: only replacement creates time]
+    DB --> H
 
     B -->|Cannot explain importance| I{Comparable to current work?}
     I -->|Yes| J[Help articulate, make comparable]
@@ -41,7 +44,7 @@ flowchart TD
     B -->|Must we always build?| Z[No]
     Z --> AA[Build only when a quality gap exists]
 
-    D --> END[Clear outcome]
+    DA --> END[Clear outcome]
     F --> END
     H --> END
     J --> END
@@ -74,14 +77,17 @@ The method handles different types of requests, questions, and situations using 
 When someone requests work to be done:
 
 **If the focus set is not full:**
-- Add the item directly to the focus set
+- Evaluate: Is this work something the organization is willing to commit to now?
+  - **Yes:** Add the item to the focus set
+  - **No:** The work is not chosen. It remains uncommitted.
+- An empty slot permits choice—it does not obligate acceptance.
 
 **If the focus set is full:**
 - Evaluate: Is this more important than current work?
   - **Yes:** Replace an item in the focus set
-  - **No:** Say no. Explain there is no queue and no date. Only replacement creates time.
+  - **No:** The work is not chosen. It is not prioritized over existing commitments.
 
-**Key principle:** No backlog queue. Work either enters now (by replacement if needed) or it doesn't happen. No false promises.
+**Key principle:** Capacity enables choice but does not justify it. Entry into Focus always requires an explicit decision to commit. Unchosen work is not denied—it is uncommitted.
 
 ---
 
@@ -196,9 +202,9 @@ When someone asks, "Is the answer always to build more features?"
 
 ### Scenario: "Can you give me a date for Feature X?"
 
-**Flow path:** External request → Focus set full → Not more important than current work → Say no, no queue, no date → Explain only replacement creates time
+**Flow path:** External request → Focus set full → Not more important than current work → Not chosen, not committed → Explain only replacement creates time
 
-**Response:** "Feature X isn't in our focus set, and we're not displacing current work for it. There's no queue and no timeline. If it becomes critical, we can discuss what to stop."
+**Response:** "Feature X is not chosen for the focus set, and we're not displacing current work for it. It remains uncommitted—no queue, no timeline, no implied future. If it becomes critical, we can discuss what to replace."
 
 ---
 

@@ -19,10 +19,10 @@ The 1..n Method addresses these by optimizing for small, focused sets of work th
 
 ## What It Is
 
-- A set of **foundations** grounded in observable constraints
 - A set of **principles** for organizing and executing work
 - A **decision flow** for determining what enters active development
 - Guidance on **metrics** that measure fitness for purpose in production
+- A **rationale** grounded in observable constraints (see Foundations appendix)
 
 ## What It Is Not
 

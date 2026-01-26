@@ -1,6 +1,6 @@
 # Method Principles
 
-The 1..n Method is governed by a small set of principles derived from the [Foundations](01-foundations.md). These principles guide how work is selected, organized, and measured.
+The 1..n Method is governed by a small set of principles that guide how work is selected, organized, and measured. These principles are designed to work with the constraints of human cognition, organizational communication, and software development reality.
 
 ## Principle 1: Maintain a Bounded Focus Set
 
@@ -19,18 +19,21 @@ New work enters the focus set only by **replacing** existing work.
 - To start something new, an existing item must leave the focus set.
 - Departure happens when work is done, explicitly abandoned, or deliberately paused.
 - Replacement forces a real-time prioritization decision: "Is this new thing more important than what we're doing now?"
+- Work not chosen for the focus set is **not denied**—it is **uncommitted**. It carries no queue position, no date, and no implied future.
 
-**Why:** Replacement prevents unbounded accumulation and ensures decisions are made with current information, not stale assumptions.
+**Why:** Replacement prevents unbounded accumulation and ensures decisions are made with current information, not stale assumptions. Treating non-selection as uncommitted (rather than rejected) removes the false promise of "later."
 
 ## Principle 3: Everything Else is Inert
 
 Work not in the focus set is **inert**—it exists as an idea, but it is explicitly not active.
 
 - Inert items are not assigned, scheduled, or promised.
-- They can be documented, discussed, and refined, but without the expectation of immediate action.
-- Inert work may become active later, or it may never happen.
+- Inert items have no priority, no ordering, and no implied future.
+- They may be documented, discussed, and refined, but without expectation of immediate action or future commitment.
+- Inert work may become active later (via replacement), or it may never happen.
+- **Inert items have no momentum by design.** They exist, but they do not compete for attention or imply future work.
 
-**Why:** Explicit inertness removes the illusion that "backlog items" are commitments. It clarifies that most ideas will not be built, and that's fine.
+**Why:** Explicit inertness removes the illusion that "backlog items" are commitments. It clarifies that most ideas will not be built, and that's fine. Storage does not equal obligation.
 
 ## Principle 4: Optimize for Fitness for Purpose in Production
 

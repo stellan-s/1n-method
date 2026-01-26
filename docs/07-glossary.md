@@ -22,10 +22,12 @@ Work that is not in the focus set.
 
 - Inert items exist as ideas, requests, or backlog entries, but they are explicitly **not active**.
 - They are not assigned, scheduled, or promised.
-- Inert work may be discussed, documented, or refined, but without expectation of immediate action.
+- **Inert items have no priority, no ordering, and no implied future.**
+- They may be discussed, documented, or refined, but without expectation of immediate action or future commitment.
 - Inert items may become active later (via replacement), or they may never be built.
+- **Inert items have no momentum by design.** They exist, but they do not compete for attention or imply future work. Storage does not equal obligation.
 
-**Example:** "Add dark mode" might be an inert item—acknowledged as a request, but not currently in focus.
+**Example:** "Add dark mode" might be an inert item—acknowledged as a request, but not currently in focus, not queued, and carrying no promise of future implementation.
 
 ---
 
@@ -119,13 +121,13 @@ The actual state of the system in production, as experienced by real users.
 
 ## Sequential Priority
 
-A way of expressing roadmap order without committing to calendar dates.
+A way of expressing current state and possibilities without committing to calendar dates or queue positions.
 
 - **Now:** In the focus set, actively being worked on.
-- **Next:** Top candidate to enter the focus set when capacity opens.
-- **Later:** Under consideration, but not imminent.
+- **Under Consideration:** Work that may become a candidate for replacement when focus set capacity becomes available. This is not a queue—all such items are inert and unordered.
+- **Exploring:** Ideas being investigated or discussed without commitment.
 
-**Why it matters:** Sequential language is honest about priority without making false time commitments.
+**Why it matters:** Sequential language describes current reality without creating false commitments. "Under consideration" does not mean "next" or imply priority order—it simply means the work exists and could potentially enter focus via replacement.
 
 ---
 
