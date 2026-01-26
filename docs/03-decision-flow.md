@@ -1,89 +1,229 @@
 # Decision Flow
 
-This document describes how work moves through the 1..n Method system, from initial idea to completion or abandonment.
+This document describes how the 1..n Method handles different types of requests, questions, and situations that arise in product development.
 
 ## The Flow
 
 ```mermaid
 flowchart TD
-    Start[New idea or request arrives]
-    Start --> Q1{Is this more important<br/>than current focus?}
+    A[New request or situation] --> B{Type of question?}
 
-    Q1 -->|No| Inert[Mark as inert]
-    Q1 -->|Yes| Q2{Is there capacity in<br/>the focus set?}
+    B -->|External request| C{Focus set full?}
+    C -->|No| D[Add to Focus set]
+    C -->|Yes| E{More important than current work?}
+    E -->|Yes| F[Replace item in Focus set]
+    E -->|No| G[Say no, no queue, no date]
+    G --> H[Explain: only replacement creates time]
 
-    Q2 -->|Yes| Add[Add to focus set]
-    Q2 -->|No| Q3{What should we stop<br/>or displace?}
+    B -->|Cannot explain importance| I{Comparable to current work?}
+    I -->|Yes| J[Help articulate, make comparable]
+    I -->|No| K[Decision not ready, not in Focus set]
 
-    Q3 --> Replace[Replace item in focus set]
-    Replace --> Add
+    B -->|Needs preparation| L[Allow preparation for understanding]
+    L --> M[No breakdown, no estimates, no commitments]
 
-    Add --> Work[Team works on item]
-    Work --> Q4{Is it fit for purpose<br/>in production?}
+    B -->|Small fix or typo or cosmetic| N{Below decision threshold?}
+    N -->|Yes| O[Fix without Focus set]
+    N -->|No| P[Must enter Focus set]
 
-    Q4 -->|No| Q5{Should we continue?}
-    Q5 -->|Yes| Work
-    Q5 -->|No| Abandon[Mark as abandoned,<br/>remove from focus set]
+    B -->|What about ideas?| Q[Ideas may exist freely]
+    Q --> R[Only Focus set is binding]
+    R --> S[Outside horizon is inert]
 
-    Q4 -->|Yes| Done[Mark as complete,<br/>remove from focus set]
+    B -->|Important but never fits| T[Diagnostic finding]
+    T --> U[Ambition exceeds capacity]
+    U --> V[Leadership must act]
 
-    Inert --> Review[Periodic review:<br/>still relevant?]
-    Review -->|No| Archive[Archive or discard]
-    Review -->|Yes| Inert
+    B -->|Leadership asks for metrics| W[Measure reality, not activity]
+    W --> X[Quality in production]
+    X --> Y[Missing important features means low quality]
 
-    Done --> End[Focus set has capacity<br/>for new work]
-    Abandon --> End
+    B -->|Must we always build?| Z[No]
+    Z --> AA[Build only when a quality gap exists]
+
+    D --> END[Clear outcome]
+    F --> END
+    H --> END
+    J --> END
+    K --> END
+    M --> END
+    O --> END
+    P --> END
+    S --> END
+    V --> END
+    Y --> END
+    AA --> END
 ```
 
 ## How to Read This Diagram
 
-### Entry Point: New Idea Arrives
+The 1..n Method handles different types of situations differently. This flowchart shows the decision paths for common scenarios.
 
-Every new request—feature idea, bug report, customer demand, internal initiative—enters at the same point: **"Is this more important than what we're doing right now?"**
+### Entry Point: New Request or Situation
 
-### Decision 1: Priority Relative to Current Focus
+Every situation enters at a classification point: **"What type of question is this?"**
 
-If the answer is **No**, the item becomes **inert**. It may be recorded, discussed, or documented, but it is not active work.
+The method handles different types of requests, questions, and situations using different decision paths.
 
-If the answer is **Yes**, proceed to capacity evaluation.
+---
 
-### Decision 2: Capacity Check
+## Decision Paths
 
-If the focus set has room (e.g., the team is working on 1 item and the limit is 3), the new item can be added directly.
+### Path 1: External Request (Feature, Bug, Customer Demand)
 
-If the focus set is full, something must be **displaced** to make room.
+When someone requests work to be done:
 
-### Decision 3: Replacement
+**If the focus set is not full:**
+- Add the item directly to the focus set
 
-Displacement requires answering: **"What are we willing to stop or pause?"**
+**If the focus set is full:**
+- Evaluate: Is this more important than current work?
+  - **Yes:** Replace an item in the focus set
+  - **No:** Say no. Explain there is no queue and no date. Only replacement creates time.
 
-This is the forcing function of the method. It requires real prioritization with real trade-offs.
+**Key principle:** No backlog queue. Work either enters now (by replacement if needed) or it doesn't happen. No false promises.
 
-Once an item is removed, the new item takes its place.
+---
 
-### Execution: Work Until Fit for Purpose
+### Path 2: Cannot Explain Importance
 
-The team works on the item until it is **fit for purpose in production**—meaning it solves the problem for real users in a real environment.
+When someone requests work but cannot articulate why it's important:
 
-If progress stalls, or if the value is no longer clear, the team decides: **Continue or abandon?**
+**If the request is comparable to current work:**
+- Help the requester articulate importance
+- Make it comparable so a real decision can be made
 
-Abandonment is not failure. It's a recognition that the work is not worth the cost, and the focus set slot should be freed for something better.
+**If it's not comparable:**
+- The decision is not ready
+- Do not add to focus set
+- Wait for clarity before committing
 
-### Completion
+**Key principle:** Vague requests don't get committed. Clarity precedes commitment.
 
-When work is complete, it leaves the focus set, creating capacity for the next item.
+---
 
-### Inert Work: Periodic Review
+### Path 3: Needs Preparation
 
-Inert items are reviewed periodically (e.g., quarterly). If they're still relevant, they remain inert. If not, they're archived or discarded.
+When work requires research, discovery, or technical investigation before it can be understood:
+
+- Allow preparation time for understanding
+- Do **not** break it down into tasks
+- Do **not** estimate timelines
+- Do **not** make commitments
+
+**Key principle:** Preparation is legitimate, but it doesn't create obligations. Investigation comes before decision.
+
+---
+
+### Path 4: Small Fix, Typo, or Cosmetic Change
+
+When something is trivial (typo, small visual fix, obvious correction):
+
+**If below the decision threshold:**
+- Fix it without focus set entry
+- No formal process needed
+
+**If not trivial:**
+- Must enter focus set like any other work
+
+**Key principle:** Don't bureaucratize the trivial. But be honest about what's actually trivial.
+
+---
+
+### Path 5: What About Ideas?
+
+When someone asks, "Can we discuss ideas freely?"
+
+**Answer:**
+- Ideas may exist freely
+- Only the focus set is binding
+- Everything outside the cognitive horizon is inert
+
+**Key principle:** Thinking and discussing are free. Commitment is not. Don't confuse conversation with obligation.
+
+---
+
+### Path 6: Important But Never Fits
+
+When work is perpetually considered important but never enters the focus set:
+
+**This is a diagnostic finding:**
+- Ambition exceeds capacity
+- The organization's goals are not aligned with its constraints
+- **Leadership must act:** either increase capacity, reduce scope, or acknowledge the mismatch
+
+**Key principle:** If something is always "next" but never starts, that's a structural problem, not a prioritization problem.
+
+---
+
+### Path 7: Leadership Asks for Metrics
+
+When leadership asks, "How do we measure progress?"
+
+**Answer:**
+- Measure reality, not activity
+- Focus on **quality in production**
+- Recognize that **missing important features means low quality**
+
+**Key principle:** Velocity, story points, and tickets closed are vanity metrics. Reality is whether the product solves problems.
+
+---
+
+### Path 8: Must We Always Build?
+
+When someone asks, "Is the answer always to build more features?"
+
+**Answer:**
+- **No.**
+- Build only when a quality gap exists
+- Quality includes having the right features, not just bug-free code
+
+**Key principle:** Sometimes the right answer is "the product is good enough." Building for its own sake is waste.
 
 ---
 
 ## Key Characteristics of This Flow
 
-1. **No automatic queue.** There is no "next up" list. Each new item is evaluated against current reality.
-2. **Explicit trade-offs.** Adding new work requires deciding what to stop.
-3. **Reality-based completion.** Work is done when it's fit for purpose in production, not when it passes internal gates.
-4. **Abandonment is normal.** Not all work should finish. Recognizing this early saves time.
+1. **Context-aware responses.** Different situations receive different treatments based on their nature.
+2. **No false promises.** If something can't enter the focus set, say so clearly.
+3. **Replacement is explicit.** When work must displace other work, that trade-off is visible.
+4. **Diagnostic clarity.** Patterns (e.g., "always important, never done") surface structural problems.
+5. **Reality over theater.** Metrics measure production outcomes, not internal activity.
 
-This flow is simple, but it requires discipline and leadership support to execute consistently.
+---
+
+## Common Scenarios
+
+### Scenario: "Can you give me a date for Feature X?"
+
+**Flow path:** External request → Focus set full → Not more important than current work → Say no, no queue, no date → Explain only replacement creates time
+
+**Response:** "Feature X isn't in our focus set, and we're not displacing current work for it. There's no queue and no timeline. If it becomes critical, we can discuss what to stop."
+
+---
+
+### Scenario: "I have an idea I want to explore."
+
+**Flow path:** What about ideas? → Ideas may exist freely → Only Focus set is binding → Outside horizon is inert
+
+**Response:** "Absolutely, let's discuss it. Ideas are always welcome. Just know that exploring it doesn't commit us to building it unless it enters the focus set."
+
+---
+
+### Scenario: "We keep saying Platform Improvement is important, but we never do it."
+
+**Flow path:** Important but never fits → Diagnostic finding → Ambition exceeds capacity → Leadership must act
+
+**Response:** "That's a signal. If it's truly important but never fits, we have a capacity problem. Leadership needs to either make room (by stopping something else) or acknowledge that it's not actually critical."
+
+---
+
+### Scenario: "How do I know the team is making progress?"
+
+**Flow path:** Leadership asks for metrics → Measure reality, not activity → Quality in production → Missing important features means low quality
+
+**Response:** "Look at production. Are customer problems being solved? Is the product more fit for purpose? Don't measure velocity—measure reality."
+
+---
+
+This flow provides a structured way to handle the complexity of product development decision-making while maintaining the core principles of bounded focus, honest communication, and reality-based progress measurement.
