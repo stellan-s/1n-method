@@ -24,25 +24,26 @@ This repository contains the method specification—not an implementation or too
 ## Quick Start
 
 - **New to the method?** Start with [Summary](docs/00-summary.md)
-- **Core principles:** See [Method Principles](docs/02-method-principles.md)
-- **How decisions flow:** Review [Decision Flow](docs/03-decision-flow.md)
-- **Understanding the rationale:** Read [Foundations](docs/01-foundations.md) (optional)
+- **Core principles:** See [Core Principles](docs/01-core-principles.md)
+- **How decisions flow:** Review [Decision Flow](docs/04-decision-flow.md)
+- **Understanding the rationale:** Read [Foundations](docs/02-foundations.md)
 
 ## Documentation
 
 ### Core Specification
 
 1. [Summary](docs/00-summary.md) – One-page overview
-2. [Method Principles](docs/02-method-principles.md) – Core operating principles
-3. [Decision Flow](docs/03-decision-flow.md) – How work moves through the system
-4. [What It Does Not Solve](docs/04-what-it-does-not-solve.md) – Explicit non-goals
-5. [Leadership and "When?"](docs/05-leadership-and-when.md) – Answering timeline questions without false precision
-6. [Metrics and Progress](docs/06-metrics-and-progress.md) – Measuring reality, not activity
-7. [Glossary](docs/07-glossary.md) – Key terms and definitions
+2. [Core Principles](docs/01-core-principles.md) – Normative rules (no explanations)
+3. [Foundations](docs/02-foundations.md) – Reality constraints that inform the method
+4. [Decision Flow](docs/04-decision-flow.md) – How work moves through the system
+5. [What It Does Not Solve](docs/05-what-it-does-not-solve.md) – Explicit non-goals
 
-### Appendix
+### Reference
 
-8. [Foundations](docs/01-foundations.md) – Reality constraints that inform the method (rationale)
+6. [Method Principles](docs/03-method-principles.md) – Expanded principles with rationale
+7. [Leadership and "When?"](docs/06-leadership-and-when.md) – Answering timeline questions
+8. [Metrics and Progress](docs/07-metrics-and-progress.md) – Measuring reality, not activity
+9. [Glossary](docs/08-glossary.md) – Key terms and definitions
 
 ## Versioning
 
