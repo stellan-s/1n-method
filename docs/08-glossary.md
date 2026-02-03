@@ -4,9 +4,18 @@ This document defines key terms used throughout the 1..n Method specification.
 
 ---
 
+## 1..n
+
+The focus set. A small, bounded list of active work (typically 1–3 items). The "1" is the most important thing; the rest are ordered but with diminishing significance.
+
+- Only items in 1..n are operationally binding.
+- Work enters 1..n by replacing existing items—see **Replacement**.
+
+---
+
 ## Focus Set
 
-The small, bounded list of work that a team is actively executing right now.
+The small, bounded list of work that a team is actively executing right now. Also referred to as **1..n**.
 
 - Typically 1–3 items per team.
 - Work in the focus set has full organizational support: attention, resources, and permission to complete.
@@ -84,16 +93,16 @@ The realistic amount of work a team can handle in a given time period.
 
 ---
 
-## Cognitive Horizon (Optional Concept)
+## Cognitive Horizon
 
-The time range within which a team can make reasonably informed decisions.
+The outer boundary of what a team can hold in awareness at once.
 
-- Inside the horizon: Estimates have meaningful signal.
-- Beyond the horizon: Estimates are guesses.
+- Items within the horizon can be seen and considered, but they carry no commitment.
+- Think of it as peripheral vision for work.
+- 1..n is a strict subset of the cognitive horizon.
+- Everything outside the cognitive horizon should be **inert**.
 
-For most teams, the cognitive horizon is 1–4 weeks for detailed work, and 1–3 months for directional planning.
-
-**Why it matters:** Commitments made beyond the cognitive horizon are unreliable.
+**Why it matters:** Work beyond the cognitive horizon cannot be meaningfully prioritized or estimated. Attempting to do so wastes attention.
 
 ---
 
@@ -105,6 +114,18 @@ The deliberate decision to stop work on an item and remove it from the focus set
 - Freeing the focus set slot allows the team to pursue something more valuable.
 
 **Why it matters:** Not all work should finish. The ability to abandon gracefully prevents sunk-cost fallacies.
+
+---
+
+## Operationally Binding
+
+Work that the team has committed to and is accountable for.
+
+- Binding work has resources, attention, and organizational support.
+- Only items in **1..n** are operationally binding.
+- Everything else—including items within the cognitive horizon—is not binding.
+
+**Why it matters:** The distinction between binding and non-binding work prevents false commitments and protects focus.
 
 ---
 

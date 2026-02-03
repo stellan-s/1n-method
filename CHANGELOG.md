@@ -5,6 +5,24 @@ All notable changes to the 1..n Method specification will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-02-03
+
+### Added
+
+- **Core Principles** (01-core-principles.md): New standalone section with 9 governing principles
+  - Introduces friction model, cognitive horizon, and operationally binding concepts
+  - Includes key terms section with definitions
+- New glossary entries: **1..n**, **Operationally Binding**
+- Updated **Cognitive Horizon** definition to focus on awareness boundary rather than time range
+
+### Changed
+
+- Restructured document numbering to accommodate Core Principles section
+- README reorganized: Core Specification (5 docs) + Reference (4 docs)
+- Updated Two States app description in README
+
+---
+
 ## [1.0.0] - 2026-01-25
 
 ### Added
@@ -36,4 +54,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
+- [1.1.0] - 2026-02-03 - Core Principles section, restructured docs
 - [1.0.0] - 2026-01-25 - Initial release

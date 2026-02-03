@@ -12,7 +12,7 @@ The 1..n Method is a specification for how product organizations make decisions 
 
 This repository contains the method specification—not an implementation or tool. Organizations can apply these principles using whatever tools fit their context.
 
-**Method Specification Version:** 1.0.1
+**Method Specification Version:** 1.1.0
 
 ## Who This Is For
 
@@ -33,7 +33,7 @@ This repository contains the method specification—not an implementation or too
 ### Core Specification
 
 1. [Summary](docs/00-summary.md) – One-page overview
-2. [Core Principles](docs/01-core-principles.md) – Normative rules (no explanations)
+2. [Core Principles](docs/01-core-principles.md) – The rules
 3. [Foundations](docs/02-foundations.md) – Reality constraints that inform the method
 4. [Decision Flow](docs/04-decision-flow.md) – How work moves through the system
 5. [What It Does Not Solve](docs/05-what-it-does-not-solve.md) – Explicit non-goals
@@ -53,7 +53,7 @@ This repository follows semantic versioning for the method specification itself.
 - **Minor version** changes indicate additions or clarifications that don't alter core principles
 - **Patch version** changes indicate corrections, typos, or formatting improvements
 
-The current version is **1.0.1**.
+The current version is **1.1.0**.
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and detailed changes.
 
