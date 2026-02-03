@@ -2,7 +2,7 @@
 
 A pragmatic approach to product development that optimizes for reality over activity.
 
-> **1n App** — A development and decision-making tool built on this method,
+> **Two States** — A development and decision-making tool built on this method,
 > with AI help for writing requirements and specs.
 > https://1n-app.netlify.app/
 
