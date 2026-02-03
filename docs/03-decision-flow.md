@@ -34,7 +34,7 @@ flowchart TD
     R --> S[Outside horizon is inert]
 
     B -->|Important but never fits| T[Diagnostic finding]
-    T --> U[Ambition exceeds capacity]
+    T --> U[Ambition exceeds capacity]       
     U --> V[Leadership must act]
 
     B -->|Leadership asks for metrics| W[Measure reality, not activity]

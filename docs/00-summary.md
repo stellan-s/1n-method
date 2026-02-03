@@ -36,6 +36,18 @@ The 1..n Method addresses these by optimizing for small, focused sets of work th
 
 **Replacement over accumulation.** Work should replace existing items in a bounded focus set, not append to an unbounded list. This constraint forces prioritization at the moment of maximum information and aligns the organization around a small, shared reality.
 
+## Core Principles
+
+- Focus is constrained; attention and coordination are finite.
+- Friction is inherent in development and cannot be eliminated, only reduced.
+- Only a small set of work can be meaningfully active at any time.
+- Prioritization beyond the near horizon is inherently unreliable.
+- Commitment requires replacement; new work displaces existing work.
+- Work that is not chosen must be allowed to exist without momentum.
+- Only what is in focus is binding; everything else is uncommitted.
+- Progress is measured by fitness for purpose in production, not activity.
+- Saying no is a leadership responsibility, not a process failure.
+
 ## Key Concepts
 
 - **Focus Set:** A small, bounded list of active work (typically 1–3 items per team)

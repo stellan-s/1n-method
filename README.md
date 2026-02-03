@@ -2,6 +2,10 @@
 
 A pragmatic approach to product development that optimizes for reality over activity.
 
+> A reference implementation of the 1..n Method is available at
+> https://1n-app.netlify.app/
+> This implementation is illustrative, not normative.
+
 ## Overview
 
 The 1..n Method is a specification for how product organizations make decisions about what to build and when. It prioritizes small, focused sets of work that replace existing reality rather than accumulating unbounded backlogs.
