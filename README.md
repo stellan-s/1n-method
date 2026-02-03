@@ -2,9 +2,9 @@
 
 A pragmatic approach to product development that optimizes for reality over activity.
 
-> A reference implementation of the 1..n Method is available at
+> **1n App** — A development and decision-making tool built on this method,
+> with AI help for writing requirements and specs.
 > https://1n-app.netlify.app/
-> This implementation is illustrative, not normative.
 
 ## Overview
 
