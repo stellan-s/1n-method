@@ -64,4 +64,4 @@ The 1..n Method addresses these by optimizing for small, focused sets of work th
 
 ## Version
 
-This is version 1.0.0 of the 1..n Method specification.
+This is version 1.0.1 of the 1..n Method specification.

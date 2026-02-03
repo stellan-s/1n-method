@@ -12,7 +12,7 @@ The 1..n Method is a specification for how product organizations make decisions 
 
 This repository contains the method specification—not an implementation or tool. Organizations can apply these principles using whatever tools fit their context.
 
-**Method Specification Version:** 1.0.0
+**Method Specification Version:** 1.0.1
 
 ## Who This Is For
 
@@ -53,7 +53,7 @@ This repository follows semantic versioning for the method specification itself.
 - **Minor version** changes indicate additions or clarifications that don't alter core principles
 - **Patch version** changes indicate corrections, typos, or formatting improvements
 
-The current version is **1.0.0**.
+The current version is **1.0.1**.
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and detailed changes.
 
