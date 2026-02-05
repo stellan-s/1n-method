@@ -63,4 +63,4 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Contributing
 
-This is v1.0 of the method specification. Feedback and discussion are welcome via issues. Proposed changes to the method itself will be evaluated carefully to maintain coherence and avoid scope creep.
+This is v1.x of the method specification. Feedback and discussion are welcome via issues. Proposed changes to the method itself will be evaluated carefully to maintain coherence and avoid scope creep.

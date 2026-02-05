@@ -34,7 +34,7 @@ flowchart TD
     R --> S[Outside horizon is inert]
 
     B -->|Important but never fits| T[Diagnostic finding]
-    T --> U[Ambition exceeds capacity]       
+    T --> U[Ambition or need exceeds capacity]       
     U --> V[Leadership must act]
 
     B -->|Leadership asks for metrics| W[Measure reality, not activity]
@@ -154,7 +154,7 @@ When someone asks, "Can we discuss ideas freely?"
 When work is perpetually considered important but never enters the focus set:
 
 **This is a diagnostic finding:**
-- Ambition exceeds capacity
+- Ambition or need exceeds capacity
 - The organization's goals are not aligned with its constraints
 - **Leadership must act:** either increase capacity, reduce scope, or acknowledge the mismatch
 
