@@ -16,8 +16,8 @@ This repository contains the method specification—not an implementation or too
 
 ## Who This Is For
 
-- CTOs and engineering leaders establishing operating principles
-- CEOs and founders seeking alignment between strategy and execution
+- Engineering leaders establishing operating principles
+- Organizational leaders seeking alignment between strategy and execution
 - Product leaders designing decision-making frameworks
 - Teams looking for an alternative to backlog-driven development
 

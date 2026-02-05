@@ -57,8 +57,8 @@ The 1..n Method addresses these by optimizing for small, focused sets of work th
 
 ## Who Should Read This
 
-- CTOs and engineering leaders establishing operating principles
-- CEOs and founders seeking alignment between strategy and execution
+- Engineering leaders establishing operating principles
+- Organizational leaders seeking alignment between strategy and execution
 - Product leaders designing decision-making frameworks
 - Teams looking for an alternative to backlog-driven development
 
