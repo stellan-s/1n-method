@@ -1,67 +1,82 @@
-# Summary
+# Summary (One Page)
 
-## What is the 1..n Method?
+The 1..n Method is a way to decide what to build, what not to build, and how to judge progress.
 
-The 1..n Method is a specification for how product organizations make decisions about what to build, when to build it, and how to measure progress.
-
-It is built on observable constraints about human cognition, organizational communication, and software engineering reality. Rather than prescribing processes or ceremonies, it provides principles that guide decision-making.
-
-## Purpose
-
-Product organizations often struggle with:
-- Backlogs that grow unbounded
-- Commitments made without capacity constraints
-- Difficulty answering "when will X be done?" honestly
-- Measuring activity instead of outcomes
-- Context-switching across too many initiatives
-
-The 1..n Method addresses these by optimizing for small, focused sets of work that replace existing reality rather than accumulate indefinitely.
-
-## What It Is
-
-- A set of **principles** for organizing and executing work
-- A **decision flow** for determining what enters active development
-- Guidance on **metrics** that measure fitness for purpose in production
-- A **rationale** grounded in observable constraints (see Foundations appendix)
-
-## What It Is Not
-
-- A project management tool or software platform
-- A prescriptive process framework (like Scrum or SAFe)
-- A guarantee of predictable delivery timelines
-- A solution to organizational politics or weak leadership
-- A replacement for strategy or vision
-
-## Core Insight
-
-**Replacement over accumulation.** Work should replace existing items in a bounded focus set, not append to an unbounded list. This constraint forces prioritization at the moment of maximum information and aligns the organization around a small, shared reality.
+Its core idea is simple: **replace, don't accumulate**. Teams work on a small active set, and new work enters only by displacing current work.
 
 ## Core Principles
 
-- Focus is constrained; attention and coordination are finite.
-- Friction is inherent in development and cannot be eliminated, only reduced.
-- Only a small set of work can be meaningfully active at any time.
-- Prioritization beyond the near horizon is inherently unreliable.
-- Commitment requires replacement; new work displaces existing work.
-- Work that is not chosen must be allowed to exist without momentum.
-- Only what is in focus is binding; everything else is uncommitted.
-- Progress is measured by fitness for purpose in production, not activity.
-- Saying no is a leadership responsibility, not a process failure.
+1. Development always has friction. You can reduce it, not remove it.
+2. Time and attention are limited and must be protected.
+3. Every extra active item increases friction.
+4. Prioritization is only reliable in the near term.
+5. **1..n** is the small set we commit to now; one item is most important.
+6. Beyond 1..n is a **cognitive horizon**: visible, but not committed.
+7. Only 1..n is **operationally binding**.
+8. Outside the cognitive horizon, work should be **inert**.
+9. Leadership must choose and say no.
 
-## Key Concepts
+## Decision Flow
 
-- **Focus Set:** A small, bounded list of active work (typically 1–3 items per team)
-- **Inert:** Items not in the focus set; they exist but are explicitly inactive
-- **Replacement:** New work enters only by displacing existing work
-- **Fitness for Purpose:** The primary measure of success—does it solve the problem in production?
+```mermaid
+flowchart TD
+    A[New request or issue] --> B{What kind of request?}
 
-## Who Should Read This
+    B -->|External request| C{Focus set full?}
+    C -->|No| D{Commit now?}
+    D -->|Yes| DA[Put in Focus set]
+    D -->|No| DB[Not chosen, no commitment]
+    C -->|Yes| E{More important than current focus?}
+    E -->|Yes| F[Replace a Focus item]
+    E -->|No| G[Not chosen, no commitment]
+    G --> H[Explain: new work needs replacement]
+    DB --> H
 
-- Engineering leaders establishing operating principles
-- Organizational leaders seeking alignment between strategy and execution
-- Product leaders designing decision-making frameworks
-- Teams looking for an alternative to backlog-driven development
+    B -->|Cannot explain importance| I{Clear enough to compare?}
+    I -->|Yes| J[Clarify it so we can compare]
+    I -->|No| K[Not ready, keep out of Focus set]
 
-## Version
+    B -->|Needs preparation| L[Do prep to understand]
+    L --> M[No tasks, estimates, or commitments]
 
-This is version 1.1.0 of the 1..n Method specification.
+    B -->|Small fix, typo, cosmetic| N{Below decision threshold?}
+    N -->|Yes| O[Fix directly]
+    N -->|No| P[Handle through Focus set]
+
+    B -->|What about ideas?| Q[Ideas are welcome]
+    Q --> R[Only Focus set is binding]
+    R --> S[Outside horizon stays inert]
+
+    B -->|Important but never fits| T[Diagnostic signal]
+    T --> U[Need is bigger than capacity]
+    U --> V[Leadership must act]
+
+    B -->|Leadership asks for metrics| W[Measure reality, not activity]
+    W --> X[Check production fitness]
+    X --> Y[Missing key features = low quality]
+
+    B -->|Must we always build?| Z[No]
+    Z --> AA[Build only to close a quality gap]
+
+    DA --> END[Clear outcome]
+    F --> END
+    H --> END
+    J --> END
+    K --> END
+    M --> END
+    O --> END
+    P --> END
+    S --> END
+    V --> END
+    Y --> END
+    AA --> END
+```
+
+## Key Terms
+
+- **1..n / Focus set:** The small active set (usually 1-3 items).
+- **Inert:** Work that exists but is not active, prioritized, or promised.
+- **Replacement:** New work enters only by displacing current focus.
+- **Fitness for purpose:** Success in production for real users.
+
+Version: **1.1.0**

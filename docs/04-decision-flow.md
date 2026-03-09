@@ -6,43 +6,43 @@ This document describes how the 1..n Method handles different types of requests,
 
 ```mermaid
 flowchart TD
-    A[New request or situation] --> B{Type of question?}
+    A[New request or issue] --> B{What kind of request?}
 
     B -->|External request| C{Focus set full?}
-    C -->|No| D{Willing to commit now?}
-    D -->|Yes| DA[Add to Focus set]
-    D -->|No| DB[Not chosen, not committed]
-    C -->|Yes| E{More important than current work?}
-    E -->|Yes| F[Replace item in Focus set]
-    E -->|No| G[Not chosen, not committed]
-    G --> H[Explain: only replacement creates time]
+    C -->|No| D{Commit now?}
+    D -->|Yes| DA[Put in Focus set]
+    D -->|No| DB[Not chosen, no commitment]
+    C -->|Yes| E{More important than current focus?}
+    E -->|Yes| F[Replace a Focus item]
+    E -->|No| G[Not chosen, no commitment]
+    G --> H[Explain: new work needs replacement]
     DB --> H
 
-    B -->|Cannot explain importance| I{Comparable to current work?}
-    I -->|Yes| J[Help articulate, make comparable]
-    I -->|No| K[Decision not ready, not in Focus set]
+    B -->|Cannot explain importance| I{Clear enough to compare?}
+    I -->|Yes| J[Clarify it so we can compare]
+    I -->|No| K[Not ready, keep out of Focus set]
 
-    B -->|Needs preparation| L[Allow preparation for understanding]
-    L --> M[No breakdown, no estimates, no commitments]
+    B -->|Needs preparation| L[Do prep to understand]
+    L --> M[No tasks, estimates, or commitments]
 
-    B -->|Small fix or typo or cosmetic| N{Below decision threshold?}
-    N -->|Yes| O[Fix without Focus set]
-    N -->|No| P[Must enter Focus set]
+    B -->|Small fix, typo, cosmetic| N{Below decision threshold?}
+    N -->|Yes| O[Fix directly]
+    N -->|No| P[Handle through Focus set]
 
-    B -->|What about ideas?| Q[Ideas may exist freely]
+    B -->|What about ideas?| Q[Ideas are welcome]
     Q --> R[Only Focus set is binding]
-    R --> S[Outside horizon is inert]
+    R --> S[Outside horizon stays inert]
 
-    B -->|Important but never fits| T[Diagnostic finding]
-    T --> U[Ambition or need exceeds capacity]       
+    B -->|Important but never fits| T[Diagnostic signal]
+    T --> U[Need is bigger than capacity]
     U --> V[Leadership must act]
 
     B -->|Leadership asks for metrics| W[Measure reality, not activity]
-    W --> X[Quality in production]
-    X --> Y[Missing important features means low quality]
+    W --> X[Check production fitness]
+    X --> Y[Missing key features = low quality]
 
     B -->|Must we always build?| Z[No]
-    Z --> AA[Build only when a quality gap exists]
+    Z --> AA[Build only to close a quality gap]
 
     DA --> END[Clear outcome]
     F --> END
