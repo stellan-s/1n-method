@@ -79,4 +79,4 @@ flowchart TD
 - **Replacement:** New work enters only by displacing current focus.
 - **Fitness for purpose:** Success in production for real users.
 
-Version: **1.1.0**
+Version: **1.1.1**

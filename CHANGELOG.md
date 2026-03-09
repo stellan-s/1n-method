@@ -5,6 +5,15 @@ All notable changes to the 1..n Method specification will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-03-09
+
+### Changed
+
+- Simplified language in the Decision Flow Mermaid chart while preserving the same structure and decision paths
+- Reworked the Summary into a one-page format centered on core principles and the decision flow
+
+---
+
 ## [1.1.0] - 2026-02-03
 
 ### Added
@@ -54,5 +63,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
+- [1.1.1] - 2026-03-09 - One-page summary and simplified chart language
 - [1.1.0] - 2026-02-03 - Core Principles section, restructured docs
 - [1.0.0] - 2026-01-25 - Initial release
